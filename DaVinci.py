@@ -81,20 +81,22 @@ def whattoencrypt(msg =""):
       else :
             whattoencrypt("enter a valid option : ")
     ####################################################nnnnnnnnnnnn
-def whattodecrypt():
+def whattodecrypt(msg=""):
       print ("what do you want to decrypt ?")
       print("""
   1) a folder containing files
   2) a single file
   3) just a message
 """)
-      w = input ("select what do you want to decrypt : ")
+      w = input (f"select what do you want to decrypt : {msg}")
       if w == "1":
             whatfolderdec()
       if w == "2":
             filedecrypt()
       if w == "3":
             messagedec()
+      else :
+            whattodecrypt("enter a valid option : ")
      ####################################################        nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 def whatfolderenc():
     path= input("enter full folder path(press Enter for current folder) : ")
