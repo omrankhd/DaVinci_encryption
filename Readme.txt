@@ -28,3 +28,4 @@ you can encrypt a specified folder by providing full path or the current folder 
 
 
 when decrypting a message you can provide the encrypted message or the path of the generated encrypted message file
+
