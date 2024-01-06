@@ -64,20 +64,22 @@ def AES():
     else:
         banner()
     ####################################################
-def whattoencrypt():
+def whattoencrypt(msg =""):
       print ("what do you want to encrypt ?")
       print("""
   1) a folder containing files
   2) a single file
   3) just a message
 """)
-      w = input ("select what do you want to encrypt : ")
+      w = input (f"select what do you want to encrypt : {msg}")
       if w == "1":
             whatfolderenc()
       if w == "2":
             fileencrypt()
       if w == "3":
             messageenc()
+      else :
+            whattoencrypt("enter a valid option : ")
     ####################################################nnnnnnnnnnnn
 def whattodecrypt():
       print ("what do you want to decrypt ?")
