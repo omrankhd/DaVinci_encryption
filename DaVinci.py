@@ -45,9 +45,9 @@ encryption/decreption method(choose a methode):
     if banner == "1":
 	        AES()
     elif banner == "2":
-	        print("")
+	        print("still under devolloping please follow this link for updates https://github.com/omrankhd/DaVinci_encryption")
     elif banner == "3":
-	        print("3")
+	        print("still under devolloping please follow this link for updates https://github.com/omrankhd/DaVinci_encryption")
     else:
         sys.exit(); 
 def AES():
